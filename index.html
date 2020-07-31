@@ -9,20 +9,24 @@
   <body>
     <header class="header">
       <div class="header__body">
-        <img class="header__logo" src="image/Tesla-Wordmark-Red.png" alt="Логотип Tesla">
-        <nav class="menu">
-          <a href="#" class="menu__item menu__item_active menu__item_car">Model S</a>
-          <a href="#" class="menu__item menu__item_car">Model X</a>
-          <a href="#" class="menu__item menu__item_car">Model 3</a>
-          <a href="#" class="menu__item menu__item_car">Roadster</a>
-          <a href="#" class="menu__item menu__item_car">Energy</a>
-          <a href="#" class="menu__item">Магазин</a>
-          <a href="#" class="menu__item">Войти</a>
+        <img class="header__logo" src="image/Tesla-Wordmark-Red.svg" alt="Логотип Tesla">
+        <nav class="menu-car">
+          <a href="#" class="menu-car__item">Model S</a>
+          <a href="#" class="menu-car__item">Model X</a>
+          <a href="#" class="menu-car__item">Model 3</a>
+          <a href="#" class="menu-car__item">Roadster</a>
+          <a href="#" class="menu-car__item">Energy</a>
         </nav>
-        <input id="header__toggle" type="checkbox">
-        <label class="header__burger" for="header__toggle">
-          <span class="header__burger_span"></span>
-        </label>
+        <div class="menu">
+          <nav class="menu__nav">
+            <a href="#" class="menu__item">Магазин</a>
+            <a href="#" class="menu__item">Войти</a>
+          </nav>
+          <input id="header__toggle" type="checkbox">
+          <label class="header__burger-label" for="header__toggle">
+            <span class="header__burger_span"></span>
+          </label>
+        </div>
       </div>
     </header>
     <main>
@@ -30,23 +34,29 @@
         <h1 class="preview__header">Model S</h1>
         <p class="preview__greeting">Добро пожаловать в будущее!</p>
         <div class="preview__main-image">
-          <img class="preview__logo" src="image/Tesla-Wordmark-Red.png" alt="Логотип Tesla">
+          <img class="preview__logo" src="image/Tesla-Wordmark-Red.svg" alt="Логотип Tesla">
           <img class="preview__car" src="image/tesla-png-tesla-png-hd-1636.png" alt="Tesla Model S красного цвета">
         </div>
-        <div class="preview__accelerate">
-          <img class="preview__accelerate-img" src="image/accelerate.png" alt="Спидометр">
-          <p class="preview__accelerate-number">2.7 <span class="preview__accelerate-text">сек</span></p>
-          <p class="preview__accelerate-description">0-100 км/час</p>
-        </div>
-        <div class="preview__range-of">
-          <img class="preview__range-of-img" src="image/Road.png" alt="Дорога">
-          <p class="preview__range-of-number">632 <span class="preview__range-of-text">км</span></p>
-          <p class="preview__range-of-description">запас хода</p>
-        </div>
-        <div class="preview__test-drive">
-          <img class="preview__test-drive-img" src="image/testdrive.png" alt="Руль">
-          <p class="preview__test-drive-text">Тест драйв</p>
-          <button type="button" name="preview-order" class="preview__order">Заказать</button>
+        <div class="preview__description">
+          <div class="preview__accelerate">
+            <img class="preview__accelerate-img" src="image/accelerate.png" alt="Спидометр">
+            <div class="preview__accelerate-info">
+              <p class="preview__accelerate-number">2,7<span class="preview__accelerate-text">сек</span></p>
+              <p class="preview__accelerate-description">0-100 км/час</p>
+            </div>
+          </div>
+          <div class="preview__range-of">
+            <img class="preview__range-of-img" src="image/Road.png" alt="Дорога">
+            <div class="preview__range-of-info">
+              <p class="preview__range-of-number">632<span class="preview__range-of-text">км</span></p>
+              <p class="preview__range-of-description">запас хода</p>
+            </div>
+          </div>
+          <div class="preview__test-drive">
+            <img class="preview__test-drive-img" src="image/testdrive.png" alt="Руль">
+            <p class="preview__test-drive-text">Тест драйв</p>
+            <button type="button" name="preview-order" class="preview__order">Заказать</button>
+          </div>
         </div>
         <div class="preview__arrow">
           <img src="image/arrow.png" alt="Стрелка" class="preview__arrow-img">
