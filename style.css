@@ -1,5 +1,6 @@
 body {
-  width: 100%;
+  /* width: 100%; */
+  width: 1440px;
   height: 2700px;
   background: #fff;
   margin:0;
@@ -222,7 +223,7 @@ body {
   margin: 6px 8px 0 0;
 }
 
-.preview__test-drive-text, .preview__order {
+.preview__test-drive-text, .preview__order, .interior__order {
   font-family: Montserrat;
   font-weight: bold;
   font-size: 13px;
@@ -239,7 +240,7 @@ body {
   margin: 0 40px 0 0;
 }
 
-.preview__order {
+.preview__order, .interior__order {
   width: 160px;
   height: 40px;
   border: 2px solid #E51937;
@@ -249,7 +250,7 @@ body {
   transition: color 0.5s, background 0.5s;
 }
 
-.preview__order:hover{
+.preview__order:hover {
   color: #fff;
   background:#E51937;
 }
@@ -259,4 +260,160 @@ body {
   align-items: center;
   justify-content: center;
   height:76px;
+  margin: 0 0 8px 0;
+}
+
+.interior {
+  display: flex;
+}
+
+.interior__header {
+  font-size: 70px;
+  line-height: 85px;
+  font-weight: 600;
+  margin: 0;
+  width: 69.4%;
+  box-sizing: border-box;
+  color: #E51937;
+  padding: 65px 0 0 80px;
+  z-index: 1;
+}
+
+.interior__car {
+  position: absolute;
+  top: 956px;
+}
+
+.interior__description {
+  background-color: #E51937;
+  z-index: 1;
+  height: 900px;
+  width: 30.6%;
+  color: #fff;
+}
+
+.interior__description-title {
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 12px 0;
+  padding: 51px 19px 0 0;
+}
+
+.interior__text {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
+  padding: 0 50px 0 53px;
+  margin:0 0 57px 0;
+}
+
+.interior__display, .interior__software, .interior__trunk {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 53px;
+}
+
+.interior__display {
+  margin: 0 0 39px 0;
+}
+
+.interior__display-img {
+  padding: 15px 0 0 0;
+}
+
+.interior__display-info {
+  padding: 0 0 0 18px;
+}
+
+.interior__display-number, .interior__trunk-number {
+  font-size: 35px;
+  line-height: 42px;
+  margin: 0;
+}
+
+.interior__display-text, .interior__trunk-text {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.interior__display-description, .interior__software-description, .interior__trunk-description {
+  margin: 0;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.interior__software {
+  padding: 0 0 0 48px;
+  margin: 0 0 26px 0;
+}
+
+.interior__software-text {
+  font-size: 20px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0 50px 0 20px;
+}
+
+.interior__software-description {
+  padding: 4px 150px 0 20px;
+}
+
+.interior__trunk-info {
+  padding: 0 0 0 24px;
+}
+
+.interior__trunk-description {
+  padding: 0 150px 0 0;
+}
+
+.interior__trunk-img {
+  padding: 5px 0 0 0;
+}
+
+.interior__trunk {
+  margin: 0 0 170px 0;
+}
+
+.interior__info {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 50px;
+}
+
+.interior__info-text, .interior__info-sign {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.interior__info-sign {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 8px 0 0;
+}
+
+.interior__info-text {
+  margin: 0 34px 0 0;
+  text-transform: uppercase;
+}
+
+.interior__order {
+  background: #E51937;
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.interior__order:hover {
+  background: #fff;
+  color: #E51937;
 }
