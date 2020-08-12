@@ -284,7 +284,7 @@ body {
   top: 956px;
 }
 
-.interior__description {
+.interior__description, .safety__description {
   background-color: #E51937;
   z-index: 1;
   height: 900px;
@@ -416,4 +416,21 @@ body {
 .interior__order:hover {
   background: #fff;
   color: #E51937;
+}
+
+.safety {
+  display: flex;
+}
+
+.safety__scheme {
+  width: 69.4%;
+}
+
+.safety__scheme-title {
+  font-size: 200px;
+  line-height: 244px;
+  color: #E51937;
+  opacity: 0.1;
+  margin: 0;
+  padding: 98px 0 0 188px;
 }
