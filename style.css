@@ -223,7 +223,7 @@ body {
   margin: 6px 8px 0 0;
 }
 
-.preview__test-drive-text, .preview__order, .interior__order {
+.preview__test-drive-text, .preview__order, .interior__order, .list, .safety__order {
   font-family: Montserrat;
   font-weight: bold;
   font-size: 13px;
@@ -240,7 +240,7 @@ body {
   margin: 0 40px 0 0;
 }
 
-.preview__order, .interior__order {
+.preview__order, .interior__order, .safety__order {
   width: 160px;
   height: 40px;
   border: 2px solid #E51937;
@@ -292,7 +292,7 @@ body {
   color: #fff;
 }
 
-.interior__description-title {
+.interior__description-title, .safety__description-title, .list-title {
   font-size: 30px;
   line-height: 37px;
   font-weight: 600;
@@ -301,7 +301,7 @@ body {
   padding: 51px 19px 0 0;
 }
 
-.interior__text {
+.interior__text, .safety__description-text {
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
@@ -379,19 +379,19 @@ body {
   margin: 0 0 170px 0;
 }
 
-.interior__info {
+.interior__info, .safety__info {
   display: flex;
   align-items: center;
   padding: 0 0 0 50px;
 }
 
-.interior__info-text, .interior__info-sign {
+.interior__info-text, .interior__info-sign, .safety__info-sign, .safety__info-text {
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
 }
 
-.interior__info-sign {
+.interior__info-sign, .safety__info-sign {
   width: 18px;
   height: 18px;
   border: 2px solid #fff;
@@ -401,19 +401,19 @@ body {
   margin: 0 8px 0 0;
 }
 
-.interior__info-text {
+.interior__info-text, .safety__info-text {
   margin: 0 34px 0 0;
   text-transform: uppercase;
 }
 
-.interior__order {
+.interior__order, .safety__order {
   background: #E51937;
   color: #fff;
   border: 2px solid #fff;
   cursor: pointer;
 }
 
-.interior__order:hover {
+.interior__order:hover, .safety__order:hover {
   background: #fff;
   color: #E51937;
 }
@@ -433,4 +433,170 @@ body {
   opacity: 0.1;
   margin: 0;
   padding: 98px 0 0 188px;
+  width: 931px;
+  height: 269px;
+}
+
+.safety__car {
+  width: 1049px;
+  height: 540px;
+  position: absolute;
+  left: 345px;
+  top: 2023px;
+  z-index: 2;
+}
+
+.safety__description-title {
+  padding: 51px 15px 0 0;
+  margin: 0 0 13px 0;
+}
+
+.safety__description-text {
+  padding: 0 60px 0 55px;
+  word-break: keep-all;
+  margin: 0 0 56px 0;
+}
+
+.safety__description-list {
+  margin: 0 0 94px 0;
+}
+
+.list-title {
+  padding: 0 68px 0 0;
+  margin: 0 0 27px 0;
+}
+
+.list {
+  list-style: none;
+  font-size: 17px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0 94px 0 56px;
+}
+
+.list__item {
+  padding: 0 0 14px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list__item-small-text {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.list__item-star {
+  background: url('image/Star.png') space, no-repeat;
+  width: 140px;
+  height: 23px;
+}
+
+.list__item-text {
+  margin: 0;
+  padding: 2px 0 0 0;
+}
+
+.shield {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 95px 0 66px;
+  margin: 0 0 61px 0;
+}
+
+.shield-img {
+  width: 62px;
+  height: 74px;
+  padding: 2px 0 0 0;
+}
+
+.shield__text {
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+}
+
+.shield__text_small {
+  font-size: 25px;
+  line-height: 25px;
+  padding: 0;
+}
+
+.safety__info {
+  padding: 0 0 0 38px;
+}
+
+.point-1__text, .point-2__text, .point-3__text {
+  font-size: 17px;
+  line-height: 15px;
+  position: absolute;
+  margin: 0;
+}
+
+.point-1__text {
+  left: 629px;
+  top: 2022px;
+  width: 172px;
+}
+
+.point-2__text {
+  left: 904px;
+  top: 1974px;
+  width: 173px;
+}
+
+.point-3__text {
+  left: 960px;
+  top: 2481px;
+  width: 233px;
+}
+
+.point-1__rect, .point-2__rect, .point-3__rect {
+  width: 4px;
+  position: absolute;
+  background-color: #E51937;
+  z-index: 2;
+}
+
+.point-1__rect {
+  height: 271px;
+  left: 614px;
+  top: 2023px;
+}
+
+.point-2__rect {
+  height: 122px;
+  left: 893px;
+  top: 1976px;
+}
+
+.point-3__rect {
+  height: 108px;
+  left: 948px;
+  top: 2400px;
+}
+
+.point-1__circle, .point-2__circle, .point-3__circle {
+  width: 14px;
+  height: 14px;
+  background: #FFFFFF;
+  border: 3px solid #E51937;
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+.point-1__circle {
+  left: 609px;
+  top: 2290px;
+}
+
+.point-2__circle {
+  left: 888px;
+  top: 2094px;
+}
+
+.point-3__circle {
+  left: 943px;
+  top: 2390px;
 }
