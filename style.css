@@ -171,7 +171,8 @@
   }
 
   .preview__car {
-    max-width: 968px;
+    width: 100%
+    /* max-width: 968px; */
     max-height: 450px;
     position: relative;
     left: 199px;
@@ -667,10 +668,16 @@
   }
 
   .preview__car {
-    max-width: 357px;
-    max-height: 166px;
+    width: 357px;
+    height: 166px;
     position: relative;
     left: 9px;
     top:27px;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .preview__car {
+    width: 968px;
   }
 }
