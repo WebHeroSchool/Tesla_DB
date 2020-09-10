@@ -1,6 +1,5 @@
   body {
     width: 100%;
-    /* width: 1440px; */
     height: 2700px;
     background: #fff;
     margin:0;
@@ -159,12 +158,9 @@
   }
 
   .preview__logo {
-    /* width: 1514px; */
     height: 467px;
     opacity: 0.1;
     position: absolute;
-    /* object-position: -82px 50%; */
-    /* object-fit: cover; */
     right: 0;
     top:134px;
   }
@@ -178,6 +174,7 @@
 
   .preview__description {
     display: flex;
+    justify-content: center;
   }
 
   .preview__accelerate-number, .preview__range-of-number {
@@ -199,13 +196,14 @@
     margin:0;
   }
 
-  .preview__accelerate, .preview__range-of, .preview__test-drive {
+  .preview__description-main, .preview__accelerate, .preview__range-of, .preview__test-drive {
     display: flex;
     align-items: center;
   }
 
   .preview__accelerate {
-    margin: 0 75px 0 319px;
+    /* margin: 0 75px 0 319px; */
+    margin: 0 75px 0 0;
   }
 
   .preview__accelerate-img {
@@ -444,10 +442,8 @@
   }
 
   .safety__car {
-    max-width: 1049px;
-    min-width: 362px;
-    max-height: 540px;
-    min-height: 186px;
+    width: 100%;
+    height: 540px;
     position: absolute;
     left: 345px;
     top: 2023px;
@@ -541,19 +537,19 @@
   }
 
   .point-1__text {
-    left: 629px;
+    left: calc(43.68%);
     top: 2022px;
     width: 172px;
   }
 
   .point-2__text {
-    left: 904px;
+    left: calc(62.78%);;
     top: 1974px;
     width: 173px;
   }
 
   .point-3__text {
-    left: 960px;
+    left: calc(66.67%);;
     top: 2481px;
     width: 233px;
   }
@@ -567,19 +563,19 @@
 
   .point-1__rect {
     height: 271px;
-    left: 614px;
+    left: calc(42.64%);;
     top: 2023px;
   }
 
   .point-2__rect {
     height: 122px;
-    left: 893px;
+    left: calc(62%);;
     top: 1976px;
   }
 
   .point-3__rect {
     height: 108px;
-    left: 948px;
+    left: calc(65.83%);;
     top: 2400px;
   }
 
@@ -595,17 +591,17 @@
   }
 
   .point-1__circle {
-    left: 609px;
+    left: calc(42.29%);;
     top: 2290px;
   }
 
   .point-2__circle {
-    left: 888px;
+    left: calc(61.67%);;
     top: 2094px;
   }
 
   .point-3__circle {
-    left: 943px;
+    left: calc(65.49%);;
     top: 2390px;
   }
 
@@ -679,6 +675,11 @@
     display: none;
   }
 
+  .preview__description {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .preview__logo {
     width: 821.81px;
     height: 271.49px;
@@ -695,7 +696,11 @@
     height: 500.82px;
   }
 
-
+  .safety__car {
+    width: 750.15px;
+    height: 386.16px;
+    left: calc(50% - 750.15px/2 - 25.07px);
+  }
 }
 
 @media screen and (min-width:1025px) and (max-width: 1280px) {
@@ -711,6 +716,11 @@
   .interior__car {
     width: 88.4%;
   }
+
+  .safety__car {
+    width: 1049px;
+    left: calc(23.96%);
+  }
 }
 
 @media screen and (min-width:1281px) {
@@ -724,5 +734,10 @@
 
   .interior__car {
     width: 88.4%;
+  }
+
+  .safety__car {
+    width: 1049px;
+    left: calc(23.96%);
   }
 }
