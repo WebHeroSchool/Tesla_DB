@@ -154,7 +154,6 @@
 
   .preview__main-image {
     margin: 0 0 50px 0;
-    overflow: hidden;
   }
 
   .preview__logo {
@@ -671,6 +670,11 @@
   body {
     height: 3073px;
   }
+
+  .header {
+    margin: 0 0 76px 0;
+  }
+
   .menu-car, .menu__nav {
     display: none;
   }
@@ -684,12 +688,14 @@
     width: 821.81px;
     height: 271.49px;
     left: calc(50% - 821.81px/2);
+    top: 251.87px;
   }
 
   .preview__car {
     width: 672.6px;
     height: 327.6px;
     left: calc(50% - 672.6px/2);
+    top: 90px;
   }
 
   .interior__car {
@@ -708,6 +714,10 @@
     width: calc(105.14%);
   }
 
+  .preview__main-image {
+    overflow: hidden;
+  }
+
   .preview__car {
     width: 968px;
     left: calc(50% - 968px/2);
@@ -724,6 +734,11 @@
 }
 
 @media screen and (min-width:1281px) {
+
+  .preview__main-image {
+    overflow: hidden;
+  }
+
   .preview__logo {
     width: calc(105.14%);
   }
