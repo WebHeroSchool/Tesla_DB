@@ -201,7 +201,6 @@
   }
 
   .preview__accelerate {
-    /* margin: 0 75px 0 319px; */
     margin: 0 75px 0 0;
   }
 
@@ -684,6 +683,10 @@
     align-items: center;
   }
 
+  .preview__main-image {
+    margin: 0 0 117px 0;
+  }
+
   .preview__logo {
     width: 821.81px;
     height: 271.49px;
@@ -698,8 +701,75 @@
     top: 90px;
   }
 
+  .preview__description-main{
+    margin-bottom: 57px;
+  }
+
+  .preview__description {
+    margin-bottom: 30px;
+  }
+
+  .preview__accelerate-img {
+    width: 74px;
+    height: 62px;
+  }
+
+  .preview__range-of-img {
+    width: 57px;
+    height: 79px;
+  }
+
+  .preview__accelerate-number, .preview__range-of-number {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .preview__test-drive-img {
+    width: 30.37px;
+    height: 30.37px;
+  }
+
+  .preview__test-drive-text, .preview__order {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .preview__test-drive-text{
+    color: #E51937;
+    text-shadow: none;
+  }
+
+  .preview__order {
+    width: 220.84px;
+    height: 55.21px;
+    background: #E51937;
+    color: #fff;
+  }
+
+  .preview__arrow {
+    margin-bottom: 35px;
+  }
+
+  .interior {
+    flex-direction: column;
+  }
+
+  .interior__header {
+    width: 288px;
+    padding: 0;
+    position: absolute;
+    left: calc(50% - 288px/2 + 194px);
+    top: 1067.7px;
+  }
+
+  .interior__description{
+    width: 100%;
+    height: 487.21px;
+  }
+
   .interior__car {
     height: 500.82px;
+    position: static;
   }
 
   .safety__car {
