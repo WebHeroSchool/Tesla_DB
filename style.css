@@ -765,11 +765,36 @@
   .interior__description{
     width: 100%;
     height: 487.21px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .interior__description-part1 {
+    display: flex;
+  }
+
+  .interior__description-part2, .interior__description-part3 {
+    width: 50%;
+  }
+
+  .interior__description-title {
+    padding: 56px 0 0 0;
+    margin-bottom: 20px;
+  }
+
+  .interior__text {
+    width: 300px;
+    padding: 0;
   }
 
   .interior__car {
     height: 500.82px;
     position: static;
+  }
+
+  .interior__info {
+    padding: 0;
+    justify-content: center;
   }
 
   .safety__car {
