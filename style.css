@@ -668,6 +668,19 @@
     margin: 0 0 76px 0;
   }
 
+  .header__body {
+    padding: 8px 33px 0 15px;
+  }
+
+  .header__burger-label {
+    width:35.23px;
+    height: 22px;
+  }
+
+  .header__burger-label span {
+    top: 10px;
+  }
+
   .menu-car, .menu__nav {
     display: none;
   }
@@ -678,21 +691,25 @@
   }
 
   .preview__main-image {
-    margin: 0 0 117px 0;
+    margin: 0;
+    width: 100%;
+    height: 449px;
+    overflow: hidden;
   }
 
   .preview__logo {
-    width: 821.81px;
+    width: calc(115%);
     height: 271.49px;
-    left: calc(50% - 821.81px/2);
-    top: 251.87px;
+    left: calc(50% - 115%/2);
+    top: -21px;
+    position: relative;
   }
 
   .preview__car {
-    width: 672.6px;
+    width: 702.72px;
     height: 327.6px;
-    left: calc(50% - 672.6px/2);
-    top: 90px;
+    left: calc(50% - 702.72px/2);
+    top: -186px;
   }
 
   .preview__description-main{
@@ -703,9 +720,23 @@
     margin-bottom: 30px;
   }
 
+  .preview__description-main {
+    width: 487.27px;
+    justify-content: space-between;
+  }
+
+  .preview__accelerate, .preview__range-of {
+    margin: 0;
+  }
+
   .preview__accelerate-img {
     width: 74px;
     height: 62px;
+    margin-right: 16px;
+  }
+
+  .preview__accelerate-text {
+    margin-left: 10px;
   }
 
   .preview__range-of-img {
