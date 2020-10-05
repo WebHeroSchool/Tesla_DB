@@ -839,10 +839,11 @@ body {
   }
 
   .safety__car {
+    position: relative;
     width: 361.83px;
     height: 186.25px;
     left: calc(50% - 361.83px/2 - 8.7px);
-    top: 1269.46px;
+    top: -97px;
   }
 
   .point-1__text, .point-2__text, .point-3__text {
@@ -1204,10 +1205,11 @@ body {
   }
 
   .safety__car {
+    position: relative;
     width: 750.15px;
     height: 386.16px;
     left: calc(50% - 750.15px/2 - 25.07px);
-    top: 2162.03px;
+    top: -116px;
   }
 
   .point-1__text, .point-2__text, .point-3__text {
